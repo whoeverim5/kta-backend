@@ -1,0 +1,53 @@
+server:
+  port: ":5250"
+  trusted-proxies:
+    - "127.0.0.1"
+
+db:
+  mysql:
+    username: root
+    password: womensange3
+    host: 127.0.0.1
+    port: 3306
+    dbname: exam
+    charset: utf8
+    parseTime: True
+    loc: Local
+  redis:
+    address: 127.0.0.1:6379
+    password: "womensange3"
+    default-db: 0
+
+cors:
+  all-origins: false
+  origins:
+    - http://127.0.0.1:7890
+    - http://localhost:7890
+  methods:
+    - PUT
+    - GET
+    - DELETE
+    - POST
+    - OPTIONS
+    - PATCH
+  headers:
+    - Origin
+    - Content-Type
+    - AccessToken
+    - X-CSRF-Token
+    - Authorization
+  expose-headers:
+    - Content-Length
+    - Access-Control-Allow-Origin
+    - Access-Control-Allow-Headers
+    - Content-Type
+  credential: true
+  max-age: 20000000
+
+email:
+  port: 25
+  host: smtp.163.com
+  nickname: 考题A
+  from: Your own email
+  secret: Your own email secret key
+  subject: 考题A在线考试教学平台——注册验证码
