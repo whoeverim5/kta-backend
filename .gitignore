@@ -1,0 +1,4 @@
+.idea
+
+resources/application-dev.yml
+pkg/test/resources/application-dev.yml
